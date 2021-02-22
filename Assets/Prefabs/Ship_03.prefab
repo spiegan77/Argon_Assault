@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5299491996588072228}
   - component: {fileID: 5323844232684320642}
   - component: {fileID: 5316789140918483796}
-  - component: {fileID: 3127372539443101666}
+  - component: {fileID: 912648786}
   m_Layer: 0
   m_Name: Ship_03
   m_TagString: Untagged
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5303543511056101672}
-  m_LocalRotation: {x: -0, y: -0.9439509, z: -0.33008596, w: 0}
+  m_LocalRotation: {x: 0, y: -0.9439509, z: -0.33008605, w: 0}
   m_LocalPosition: {x: -80.92, y: 114.14, z: 239.14}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
@@ -80,16 +80,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &3127372539443101666
-BoxCollider:
+--- !u!114 &912648786
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5303543511056101672}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.64664847, y: 0.63312775, z: 0.091510855}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 339c70167b7a8624cad90f8a1bf2da4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathFX: {fileID: 5212960368049274030, guid: 8a303f541b7ac6d4c93072abce24ac81, type: 3}
