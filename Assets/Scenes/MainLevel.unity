@@ -1030,6 +1030,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 1139852514}
+    - target: {fileID: 1548390552, guid: f948259281da3ec42951a2a5e86723bc, type: 3}
+      propertyPath: scorePerHit
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1653309628477030898, guid: f948259281da3ec42951a2a5e86723bc,
         type: 3}
       propertyPath: m_Name
