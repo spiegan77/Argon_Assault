@@ -463,6 +463,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 289513383}
+  - {fileID: 416096688}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -471,6 +472,80 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &416096685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 416096688}
+  - component: {fileID: 416096687}
+  - component: {fileID: 416096686}
+  m_Layer: 5
+  m_Name: Slackbar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &416096686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416096685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: e8100154e7e290e4a8aba4a92421f000, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &416096687
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416096685}
+  m_CullTransparentMesh: 0
+--- !u!224 &416096688
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416096685}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 404432514}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 872, y: -462.47}
+  m_SizeDelta: {x: 207.51648, y: 155.06723}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &547019600
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,9 +954,14 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: 4774514078938322480, guid: b3bc2b07d66f709488869a6a84f4b99e, type: 2}
     value: {fileID: 963194229}
+  - key: {fileID: -8265318334745242286, guid: b3bc2b07d66f709488869a6a84f4b99e, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
+    - f8ffd73ba25cac34284be9f1e682dacf: {fileID: 416096685}
+    - 2994488db82c90d408b9932969a2cc3e: {fileID: 416096685}
     - e40923b6d921e314084a63e46179a58d: {fileID: 1973719345}
+    - d2c09ea359b82ec4d9301da2cfb269b5: {fileID: 416096685}
 --- !u!1 &1646913956
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,6 +1577,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4591390744867303085, guid: 5756fc0b0216c4148887f3e37d06d258,
         type: 3}
+      propertyPath: EmissionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591390744867303085, guid: 5756fc0b0216c4148887f3e37d06d258,
+        type: 3}
       propertyPath: CollisionModule.enabled
       value: 1
       objectReference: {fileID: 0}
@@ -1578,6 +1663,11 @@ PrefabInstance:
     - target: {fileID: 7151219527812454047, guid: 5756fc0b0216c4148887f3e37d06d258,
         type: 3}
       propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151219527812454047, guid: 5756fc0b0216c4148887f3e37d06d258,
+        type: 3}
+      propertyPath: EmissionModule.enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7151219527812454047, guid: 5756fc0b0216c4148887f3e37d06d258,
